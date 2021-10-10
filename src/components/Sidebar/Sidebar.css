@@ -1,0 +1,173 @@
+.sidebar {
+  background-color: var(--black);
+  width: 18rem;
+  height: calc(100vh - 5.625rem);
+  color: var(--white);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar__logo {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.sidebar__logo img {
+  width: 131px;
+  height: 40px;
+}
+
+.sidebar__menu {
+  padding: 0 0.5rem;
+}
+
+.sidebar__menu--link,
+.sidebar__download--div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  color: var(--text-gray);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+}
+
+.sidebar__menu--link:hover,
+.sidebar__download--div:hover {
+  color: var(--white);
+}
+
+.sidebar__menu--link p,
+.sidebar__download--div p {
+  font-size: 0.875rem;
+}
+
+.sidebar__menu--link img,
+.sidebar__download--div img {
+  transition: 0.2s opacity ease-in-out;
+  opacity: 0.7;
+}
+
+.sidebar__menu--link:hover img,
+.sidebar__download--div:hover img {
+  opacity: 1;
+}
+
+.active {
+  background-color: var(--menu-active);
+  color: var(--white);
+  border-radius: 0.25rem;
+}
+
+.active img {
+  opacity: 1;
+}
+
+.sidebar__playlists {
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.sidebar__playlists .add,
+.sidebar__playlists .liked {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  color: var(--text-gray);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+}
+
+.sidebar__playlists .add p,
+.sidebar__playlists .liked p {
+  font-size: 0.875rem;
+}
+
+.sidebar__playlists .add:hover,
+.sidebar__playlists .liked:hover {
+  color: var(--white);
+}
+
+.sidebar__playlists .add img,
+.sidebar__playlists .liked img {
+  transition: 0.2s opacity ease-in-out;
+  opacity: 0.7;
+}
+
+.sidebar__playlists .add:hover img,
+.sidebar__playlists .liked:hover img {
+  opacity: 1;
+}
+
+.sidebar__playlists .add div {
+  background-color: var(--white);
+}
+
+.sidebar__playlists .liked div {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.sidebar__playlists .add div,
+.sidebar__playlists .liked div {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1px;
+  transition: 0.2s opacity ease-in-out;
+}
+
+.sidebar__playlists .add:hover div,
+.sidebar__playlists .liked:hover div {
+  opacity: 1;
+}
+
+.sidebar__playlists .add div img,
+.sidebar__playlists .liked div img {
+  position: absolute;
+  z-index: 2;
+}
+
+.sidebar__hr {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+.sidebar__hr hr {
+  border: 1px solid var(--menu-active);
+}
+
+.sidebar__list {
+  flex: 1;
+  overflow: auto;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  transition: 0.2s color ease-in-out;
+}
+
+.sidebar__list p {
+  cursor: pointer;
+}
+
+.sidebar__list p:hover {
+  color: var(--white);
+}
+
+.sidebar__list p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.sidebar__download {
+  padding: 0 0.5rem;
+}

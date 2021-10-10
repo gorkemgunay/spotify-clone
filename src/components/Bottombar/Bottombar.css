@@ -1,0 +1,162 @@
+.bottombar {
+  width: 100%;
+  height: 5.625rem;
+  padding: 0 1rem;
+  background-color: var(--secondary-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--menu-active);
+}
+
+.bottombar__song,
+.bottombar__player,
+.bottombar__helper {
+  flex-shrink: 0;
+}
+
+.bottombar__song {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottombar__song--image {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.bottombar__song--songName {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottombar__song--songName .songName {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.bottombar__song--songName .songName:hover {
+  text-decoration: underline;
+}
+
+.bottombar__song--songName .artistName {
+  text-decoration: none;
+  color: var(--text-gray);
+  font-size: 0.6875rem;
+}
+
+.bottombar__song--songName .artistName:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.bottombar__player {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottombar__player .bottombar__player--top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+.bottombar__player .bottombar__player--top div {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottombar__player .bottombar__player--top div img {
+  opacity: 0.7;
+  transition: 0.2s opacity ease-in-out;
+}
+.bottombar__player .bottombar__player--top div:hover img {
+  opacity: 1;
+}
+
+.bottombar__player .bottombar__player--top .bottombar__player--top--playButton {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--white);
+  border-radius: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 0.2s transform ease-in-out;
+}
+
+.bottombar__player
+  .bottombar__player--top
+  .bottombar__player--top--playButton
+  img {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+.bottombar__player
+  .bottombar__player--top
+  .bottombar__player--top--playButton:hover {
+  transform: scale(1.05);
+}
+
+.bottombar__player .bottombar__player--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottombar__player .bottombar__player--bottom p {
+  color: var(--text-gray);
+  font-size: 0.6875rem;
+}
+
+.bottombar__player .bottombar__player--bottom div {
+  background-color: var(--progress-bar);
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 50vw;
+  margin: 0 0.5rem;
+}
+
+.bottombar__helper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottombar__helper div {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottombar__helper div img {
+  opacity: 0.7;
+  transition: 0.2s opacity ease-in-out;
+}
+.bottombar__helper div:hover img {
+  opacity: 1;
+}
+
+.bottombar__helper .volumeBar {
+  background-color: var(--text-gray);
+  height: 0.25rem;
+  border-radius: 50vw;
+  width: 7rem;
+}
