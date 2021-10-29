@@ -1,0 +1,12 @@
+.search {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  background: var(--background);
+  width: 100%;
+  height: calc(100vh - 5.625rem);
+  overflow-y: scroll;
+  color: var(--white);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}

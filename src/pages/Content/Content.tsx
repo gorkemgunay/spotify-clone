@@ -1,32 +1,13 @@
 import React from "react";
+import Navbar from "../../components/Navbar";
 import "./Content.css";
-import leftArrow from "../../assets/icons/18.svg";
-import rightArrow from "../../assets/icons/19.svg";
-import user from "../../assets/icons/20.svg";
-import dropdown from "../../assets/icons/21.svg";
 
 interface Props {}
 
 const Content: React.FC<Props> = () => {
   return (
     <div className="content">
-      <div className="content__top">
-        <div className="content__top--left">
-          <div>
-            <img src={leftArrow} alt="spotify-leftArrow" />
-          </div>
-          <div>
-            <img src={rightArrow} alt="spotify-rightArrow" />{" "}
-          </div>
-        </div>
-        <div className="content__top--right">
-          <div>
-            <img src={user} alt="spotify-user" />
-          </div>
-          <p>username</p>
-          <img src={dropdown} alt="spotify-dropdown" />
-        </div>
-      </div>
+      <Navbar />
       <div className="content__main">
         <h2>Good Morning</h2>
         <div className="content__main--songs">

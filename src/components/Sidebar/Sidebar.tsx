@@ -8,6 +8,7 @@ import library from "../../assets/icons/3.svg";
 import add from "../../assets/icons/4.svg";
 import heart from "../../assets/icons/5.svg";
 import download from "../../assets/icons/6.svg";
+import { NavLink } from "react-router-dom";
 
 interface Props {}
 
@@ -18,15 +19,25 @@ const Sidebar: React.FC<Props> = () => {
         <img src={logo} alt="spotify-logo" />
       </div>
       <div className="sidebar__menu">
-        <li className="sidebar__menu--link active">
+        <NavLink
+          exact
+          to="/"
+          activeClassName="active"
+          className="sidebar__menu--link"
+        >
           <img src={home} alt="spotify-home" />
           <p>Home</p>
-        </li>
+        </NavLink>
 
-        <li className="sidebar__menu--link">
+        <NavLink
+          exact
+          to="/search"
+          activeClassName="active"
+          className="sidebar__menu--link"
+        >
           <img src={search} alt="spotify-search" />
           <p>Search</p>
-        </li>
+        </NavLink>
 
         <li className="sidebar__menu--link">
           <img src={library} alt="spotify-library" />
