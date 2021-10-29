@@ -23,7 +23,7 @@ const index: React.FC<Props> = ({ searchComponent }) => {
         {searchComponent && (
           <div className="navbar__top--search">
             <img src={search} alt="spotify-search" />
-            <input type="text" placeholder="Artist, songs, or podcats" />
+            <input type="text" placeholder="Artist, songs, or podcasts" />
           </div>
         )}
       </div>
